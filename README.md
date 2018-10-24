@@ -88,10 +88,30 @@ Here's the list of supported BBcodes:
 | [size=20] _test_ [/size] | sets font size (in pixels) |
 | [color=#ff0000] _test_ [/color] | sets text color (hex vlue) |
 | [url] _http://mypage.com_ [/url] | creates a link |
+| [img] _http://mypage.com/myimage.jpg_ [/img] | creates an image |
 | [ul]<br/>[\*] test 1 <br/>[\*] test 2 <br/>[/ul] | unordered list |
 | [ol]<br/>[\*] test 1 <br/>[\*] test 2 <br/>[/ol] | ordered list |
 
 <br/><br/>
+
+
+### Summarizing
+
+``` php
+include_once('lc_quick_shortcodes.php');
+$lcqs = new lcweb\quick_sc\lc_quick_shortcodes;
+
+$lcqs->register('title', array('lang'=>'html'), true, function($atts, $contents) {	
+	return '<pre class="language-'. $atts['lang'] .'"><code>'. $contents .'</code></pre>';
+});
+
+
+$string = 'Lorem ipsum [code lang="php"]dolor sit amet[/code]';
+echo $lcqs->process($string, $bbcodes = true);
+```
+
+<br/><br/>
+
 * * *
 
 Copyright &copy; Luca Montanari (aka LCweb)
