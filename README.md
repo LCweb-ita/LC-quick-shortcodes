@@ -20,7 +20,7 @@ $lcqs = new lcweb\quick_sc\lc_quick_shortcodes;
 ```
 <br/>   
    
-#### Shortcodes registration
+### Shortcodes registration
 Here are two examples: the first says Hello!, while the second prints a code block.
 
 ``` php
@@ -52,9 +52,9 @@ Analyzing function parameters:
 	2. __*contents*__ - this is empty if $has_contents is set to false  
 
 
-<br/>   
+<br/><br/>   
    
-#### Shortcodes execution
+### Shortcodes execution
 Once everything is properly registered, just let the class execute your string
 
 ``` php
@@ -67,11 +67,11 @@ Once everything is properly registered, just let the class execute your string
  * @return (string) executed text
  */
 
-$string = 'Lorem ipsum [code]dolor sit amet[/code]';
+$string = 'Lorem ipsum [code lang="php"]dolor sit amet[/code]';
 echo $lcqs->process($string, $bbcodes = true);
 
 /* Resulting string:
- * Lorem ipsum <pre class="language-html"><code>dolor sit amet</code></pre>
+ * Lorem ipsum <pre class="language-php"><code>dolor sit amet</code></pre>
  */
 ```
 
