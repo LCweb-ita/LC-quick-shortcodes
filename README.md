@@ -4,9 +4,9 @@ Using this tiny PHP class you'll be able to use the same engine also on your pro
 
 As little extra, the class already executes few common __[BBcodes](https://en.wikipedia.org/wiki/BBCode)__ (continue reading to know which ones)
 
-It is just 5KB big and __doesn't have any dependency__.<br/>
-Supports any server running __PHP 5.4__ and later.<br/>
-Shortcodes can be __nested__ and you can use __HTML__ within.
+* It is just 5KB big and __doesn't have any dependency__.<br/>
+* Supports any server running __PHP 5.4__ and later.<br/>
+* Shortcodes can be __nested__ and you can use __HTML__ within.
 
 
 How to use
