@@ -110,6 +110,8 @@ $string = 'Lorem ipsum [code lang="php"]dolor sit amet[/code]';
 echo $lcqs->process($string, $bbcodes = true);
 ```
 
+Isn't it quick?
+
 <br/><br/>
 
 * * *
